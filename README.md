@@ -38,7 +38,7 @@ ligo compile-storage vote.ligo main 'record[status = True; yes = 0n; no = 0n; vo
 - Non-owner account : vote yes -> [ Success, +1 yes ]
 
 ```shell
-ligo dry-run --source="tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" vote.ligo main 'Vote(1n)' 'record[status = True; yes = 0n; no = 0n; voters = (Set.empty : set(address))]'
+ligo dry-run --sender="tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" vote.ligo main 'Vote(1n)' 'record[status = True; yes = 0n; no = 0n; voters = (Set.empty : set(address))]'
 ```
 
 
@@ -46,7 +46,7 @@ ligo dry-run --source="tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" vote.ligo main 'Vot
 - Non-owner account : vote no -> [ Success, +1 no ]
 
 ```shell
-ligo dry-run --source="tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" vote.ligo main 'Vote(2n)' 'record[status = True; yes = 0n; no = 0n; voters = (Set.empty : set(address))]'
+ligo dry-run --sender="tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" vote.ligo main 'Vote(2n)' 'record[status = True; yes = 0n; no = 0n; voters = (Set.empty : set(address))]'
 ```
 
 
